@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="relative min-h-screen bg-gray-900 overflow-x-hidden">
     <header
-      class="fixed top-0 left-0 w-full p-2 flex items-center justify-between backdrop-blur-md bg-white/10 border-b border-white/20 z-50"
+      class="fixed top-0 left-0 w-full p-2 flex items-center justify-between backdrop-blur-md bg-white/10 border-b border-white/20 z-50 px-40"
     >
       <img
         class="w-28"
@@ -16,13 +20,13 @@
         alt="Motorsport Growth Logo"
       />
       <div>
-        <a
+        <!-- <a
           class="bg-red-600 hover:bg-red-700 text-white font-semibold p-2 rounded-md transition duration-300"
           href="index2.html"
           >Layout 2</a
-        >
+        > -->
         <a
-          class="bg-red-600 hover:bg-red-700 text-white font-semibold p-2 rounded-md transition duration-300"
+          class="bg-red-500 hover:bg-red-700 text-white font-semibold p-2 rounded-md transition duration-300"
           href="#"
           >Claim My Free Blueprint</a
         >
@@ -31,7 +35,7 @@
 
     <!-- Background grid and center glow -->
     <div
-      class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_0%,transparent_60%)] pointer-events-none z-0"
+      class="absolute inset-0 bg-[#1b1b1c] bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.9)_0%,transparent_60%)] bg-blend-overlay pointer-events-none z-0"
     ></div>
     <div
       class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 pointer-events-none z-0"
@@ -39,79 +43,87 @@
 
     <!-- Page content -->
     <div
-      class="relative min-h-screen flex flex-col items-center justify-center px-40 py-8 z-10"
+      class="relative min-h-screen grid grid-cols-2 gap-4 items-stretch justify-center px-40 z-10"
     >
-      <!-- Header -->
-      <h1
-        class="text-3xl md:text-5xl font-bold text-center mb-4 mt-12 text-white"
-      >
-        Add <span class="text-red-500">15+</span> Euro & Exotic Jobs To Your
-        Bays
-      </h1>
+      <div class="flex flex-col justify-center gap-4 p-4 h-full">
+        <!-- Header -->
+        <h1 class="text-3xl md:text-5xl font-bold text-start text-white">
+          Add 15+ Euro & Exotic Jobs To Your Bays
+          <span class="text-red-500">In less than 30-60 Days</span>
+        </h1>
 
-      <!-- Subheader -->
-      <p class="text-lg md:text-2xl text-center mb-8 text-gray-400">
-        In less than 30-60 Days * GUARANTEED *
-      </p>
+        <!-- Subheader -->
+        <p class="text-lg md:text-2xl text-start text-gray-400">
+          * GUARANTEED *
+        </p>
 
-      <!-- Video Placeholder -->
-      <div
-        class="w-full max-w-2xl aspect-video bg-gray-800/70 flex items-center justify-center rounded-lg mb-8 border border-gray-700"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          class="text-4xl text-red-500 w-14 hover:text-red-700 cursor-pointer"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
+        <!-- CTA Button -->
+        <a
+          href="#"
+          class="w-fit bg-red-500 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300"
         >
-          <polygon points="5,3 19,12 5,21" />
-        </svg>
+          Claim My FREE Blueprint
+        </a>
       </div>
 
-      <!-- CTA Button -->
-      <a
-        href="#"
-        class="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-full mb-16 text-lg transition duration-300"
-      >
-        Claim My FREE Blueprint
-      </a>
-    </div>
-    <!-- Results Section -->
-    <div class="text-center mt-20 w-full border-b-2 border-gray-700">
-      <div class="flex gap-2 items-center justify-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="17"
-          height="18"
-          viewBox="0 0 33 32"
-          fill="none"
+      <!-- Video Placeholder -->
+      <div class="w-full max-w-2xl flex items-center justify-center h-full">
+        <div
+          class="w-full aspect-video grid grid-cols-2 gap-2 p-10 items-center justify-center rounded-lg bg-[#18181d] border border-gray-700 h-fit"
         >
-          <path
-            d="M0.5 16C15.3967 18.9286 16.5 32 16.5 32C16.5 32 17.6033 18.9286 32.5 16C17.6033 13.0714 16.5 0 16.5 0C16.5 0 15.3967 13.0714 0.5 16Z"
-            fill="#F9022C"
-          ></path>
-        </svg>
-        <h2 class="text-2xl font-semibold text-white">Results</h2>
+          <!-- Optional SVG -->
+          <div
+            class="p-6 shadow-lg bg-gray-800/70 h-full rounded-md transform transition duration-300 hover:-translate-y-1"
+          >
+            <h1 class="text-red-500 text-4xl font-bold mb-1">3,856</h1>
+            <p class="text-gray-300 font-semibold mb-1">Leads</p>
+            <h1 class="text-white text-xl font-bold">&lt;$6 Cost-Per-Lead</h1>
+          </div>
+          <div
+            class="p-6 shadow-lg bg-gray-800/70 h-full rounded-md transform transition duration-300 hover:-translate-y-1"
+          >
+            <h1 class="text-red-500 text-4xl font-bold mb-1">&gt;$120K</h1>
+            <p class="text-gray-300 font-semibold mb-1">in first 60 days</p>
+            <h1 class="text-white text-xl font-bold">Calendar Booked</h1>
+          </div>
+
+          <button
+            type="button"
+            class="col-span-2 bg-red-500 p-2 rounded-md text-white flex items-center justify-center gap-2 text-xl"
+          >
+            Show me how <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="relative bg-[#18181d] p-10 w-full">
+      <div class="flex gap-2 items-center justify-center">
+        <h2 class="text-4xl font-semibold text-white">
+          Real Results From Real Shops
+        </h2>
       </div>
 
       <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 px-40 py-8">
         <div
-          class="w-full mx-auto backdrop-blur-md bg-white/10 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+          class="w-full mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
         >
           <!-- Logo -->
-          <div class="flex justify-center">
+          <!-- <div class="flex justify-center">
             <img
               src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_748/https://motorsportgrowth.com/wp-content/uploads/2024/07/Asset-1-1.png"
               alt="Logo"
               class="w-24 h-auto rounded-lg"
             />
-          </div>
+          </div> -->
 
           <!-- Stats -->
           <div class="space-y-3 text-white">
-            <p class="text-lg font-semibold">3,856 Leads</p>
+            <div>
+              <h1 class="text-4xl font-bold text-red-500">3,856</h1>
+              <p>Leads</p>
+            </div>
             <p class="text-lg font-semibold">&lt;$6 Cost-Per-Lead</p>
             <p class="text-lg font-semibold">&gt;$120,000 in first 60 days</p>
             <p class="text-lg font-semibold">Calendar Booked</p>
@@ -134,7 +146,7 @@
           <!-- Button -->
           <div class="text-center">
             <button
-              class="px-6 py-3 bg-red-500 text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
+              class="w-full px-6 py-3 bg-red-500 text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
             >
               Show me how
             </button>
@@ -142,87 +154,47 @@
         </div>
 
         <div
-          class="w-full mx-auto backdrop-blur-md bg-white/10 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+          class="w-full mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
         >
-          <!-- Logo -->
-          <div class="flex justify-center">
-            <img
-              src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_748/https://motorsportgrowth.com/wp-content/uploads/2024/07/Asset-1-1.png"
-              alt="Logo"
-              class="w-24 h-auto rounded-lg"
-            />
-          </div>
-
           <!-- Stats -->
           <div class="space-y-3 text-white">
-            <p class="text-lg font-semibold">3,856 Leads</p>
-            <p class="text-lg font-semibold">&lt;$6 Cost-Per-Lead</p>
-            <p class="text-lg font-semibold">&gt;$120,000 in first 60 days</p>
-            <p class="text-lg font-semibold">Calendar Booked</p>
-          </div>
-
-          <!-- Star Rating (optional quote) -->
-          <!-- <div class="flex flex-col items-center space-x-2">
-           
-            <div class="flex space-x-1">
-              <span class="text-yellow-400">★</span>
-              <span class="text-yellow-400">★</span>
-              <span class="text-yellow-400">★</span>
-              <span class="text-yellow-400">★</span>
-              <span class="text-gray-300">★</span>
+            <div>
+              <h1 class="text-4xl font-bold text-red-500">688</h1>
+              <p>Leads</p>
             </div>
-            
-            <p class="text-gray-300 italic">"Great service! Helped me reach my business goals." - Sam</p>
-          </div> -->
-
-          <!-- Button -->
-          <div class="text-center">
-            <button
-              class="px-6 py-3 bg-red-500 text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
-            >
-              Show me how
-            </button>
-          </div>
-        </div>
-        
-        <div
-          class="w-full mx-auto backdrop-blur-md bg-white/10 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
-        >
-          <!-- Logo -->
-          <div class="flex justify-center">
-            <img
-              src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_795/https://motorsportgrowth.com/wp-content/uploads/2024/07/Asset-6-1.png"
-              alt="Logo"
-              class="w-24 h-auto rounded-lg"
-            />
-          </div>
-
-          <!-- Stats -->
-          <div class="space-y-3 text-white">
-            <p class="text-lg font-semibold">688 Leads</p>
             <p class="text-lg font-semibold">$12 Cost-Per-Lead</p>
             <p class="text-lg font-semibold">Fully booked calendar</p>
             <p class="text-lg font-semibold">450% increase in net profit</p>
           </div>
 
-          <!-- Star Rating (optional quote) -->
-          <!-- <div class="flex flex-col items-center space-x-2">
-           
-            <div class="flex space-x-1">
-              <span class="text-yellow-400">★</span>
-              <span class="text-yellow-400">★</span>
-              <span class="text-yellow-400">★</span>
-              <span class="text-yellow-400">★</span>
-              <span class="text-gray-300">★</span>
+          <!-- Button -->
+          <div class="text-center">
+            <button
+              class="w-full px-6 py-3 bg-red-500 text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
+            >
+              Show me how
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="w-full mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+        >
+          <!-- Stats -->
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="text-4xl font-bold text-red-500">688</h1>
+              <p>Leads</p>
             </div>
-            
-            <p class="text-gray-300 italic">"Great service! Helped me reach my business goals." - Sam</p>
-          </div> -->
+            <p class="text-lg font-semibold">$12 Cost-Per-Lead</p>
+            <p class="text-lg font-semibold">Fully booked calendar</p>
+            <p class="text-lg font-semibold">450% increase in net profit</p>
+          </div>
 
           <!-- Button -->
           <div class="text-center">
             <button
-              class="px-6 py-3 bg-red-500 text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
+              class="w-full px-6 py-3 bg-red-500 text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
             >
               Show me how
             </button>
@@ -232,42 +204,20 @@
     </div>
 
     <!-- Winning Section -->
-    <div class="text-center mt-20 w-full border-b-2 border-gray-700">
+    <div class="relative text-center p-10 w-full">
       <div class="flex gap-2 items-center justify-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="17"
-          height="18"
-          viewBox="0 0 33 32"
-          fill="none"
-        >
-          <path
-            d="M0.5 16C15.3967 18.9286 16.5 32 16.5 32C16.5 32 17.6033 18.9286 32.5 16C17.6033 13.0714 16.5 0 16.5 0C16.5 0 15.3967 13.0714 0.5 16Z"
-            fill="#F9022C"
-          ></path>
-        </svg>
         <h2 class="text-4xl font-semibold text-white">Our Winning Formula</h2>
       </div>
 
       <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 px-40 py-8">
         <div
-          class="w-full mx-auto backdrop-blur-md bg-white/10 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+          class="w-full flex flex-col items-center mx-auto backdrop-blur-md border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
         >
           <!-- Logo -->
-          <div class="flex justify-center">
-            <svg
-              class=""
-              xmlns="http://www.w3.org/2000/svg"
-              width="34"
-              height="34"
-              viewBox="0 0 33 32"
-              fill="none"
-            >
-              <path
-                d="M0.5 16C15.3967 18.9286 16.5 32 16.5 32C16.5 32 17.6033 18.9286 32.5 16C17.6033 13.0714 16.5 0 16.5 0C16.5 0 15.3967 13.0714 0.5 16Z"
-                fill="#F9022C"
-              ></path>
-            </svg>
+          <div
+            class="flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
+          >
+            <i class="fas fa-user-check text-white text-3xl"></i>
           </div>
 
           <!-- formula -->
@@ -281,23 +231,13 @@
         </div>
 
         <div
-          class="w-full mx-auto backdrop-blur-md bg-white/10 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+          class="w-full flex flex-col items-center mx-auto backdrop-blur-md border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
         >
           <!-- Logo -->
-          <div class="flex justify-center">
-            <svg
-              class=""
-              xmlns="http://www.w3.org/2000/svg"
-              width="34"
-              height="34"
-              viewBox="0 0 33 32"
-              fill="none"
-            >
-              <path
-                d="M0.5 16C15.3967 18.9286 16.5 32 16.5 32C16.5 32 17.6033 18.9286 32.5 16C17.6033 13.0714 16.5 0 16.5 0C16.5 0 15.3967 13.0714 0.5 16Z"
-                fill="#F9022C"
-              ></path>
-            </svg>
+          <div
+            class="flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
+          >
+            <i class="fas fa-user-check text-white text-3xl"></i>
           </div>
 
           <!-- formula -->
@@ -311,23 +251,13 @@
         </div>
 
         <div
-          class="w-full mx-auto backdrop-blur-md bg-white/10 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+          class="w-full flex flex-col items-center mx-auto backdrop-blur-md border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
         >
           <!-- Logo -->
-          <div class="flex justify-center">
-            <svg
-              class=""
-              xmlns="http://www.w3.org/2000/svg"
-              width="34"
-              height="34"
-              viewBox="0 0 33 32"
-              fill="none"
-            >
-              <path
-                d="M0.5 16C15.3967 18.9286 16.5 32 16.5 32C16.5 32 17.6033 18.9286 32.5 16C17.6033 13.0714 16.5 0 16.5 0C16.5 0 15.3967 13.0714 0.5 16Z"
-                fill="#F9022C"
-              ></path>
-            </svg>
+          <div
+            class="flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
+          >
+            <i class="fas fa-user-check text-white text-3xl"></i>
           </div>
 
           <!-- formula -->
@@ -340,23 +270,13 @@
         </div>
 
         <div
-          class="w-full mx-auto backdrop-blur-md bg-white/10 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+          class="w-full flex flex-col items-center mx-auto backdrop-blur-md border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
         >
           <!-- Logo -->
-          <div class="flex justify-center">
-            <svg
-              class=""
-              xmlns="http://www.w3.org/2000/svg"
-              width="34"
-              height="34"
-              viewBox="0 0 33 32"
-              fill="none"
-            >
-              <path
-                d="M0.5 16C15.3967 18.9286 16.5 32 16.5 32C16.5 32 17.6033 18.9286 32.5 16C17.6033 13.0714 16.5 0 16.5 0C16.5 0 15.3967 13.0714 0.5 16Z"
-                fill="#F9022C"
-              ></path>
-            </svg>
+          <div
+            class="flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
+          >
+            <i class="fas fa-user-check text-white text-3xl"></i>
           </div>
 
           <!-- formula -->
@@ -372,23 +292,13 @@
         </div>
 
         <div
-          class="w-full mx-auto backdrop-blur-md bg-white/10 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+          class="w-full flex flex-col items-center mx-auto backdrop-blur-md border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
         >
           <!-- Logo -->
-          <div class="flex justify-center">
-            <svg
-              class=""
-              xmlns="http://www.w3.org/2000/svg"
-              width="34"
-              height="34"
-              viewBox="0 0 33 32"
-              fill="none"
-            >
-              <path
-                d="M0.5 16C15.3967 18.9286 16.5 32 16.5 32C16.5 32 17.6033 18.9286 32.5 16C17.6033 13.0714 16.5 0 16.5 0C16.5 0 15.3967 13.0714 0.5 16Z"
-                fill="#F9022C"
-              ></path>
-            </svg>
+          <div
+            class="flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
+          >
+            <i class="fas fa-user-check text-white text-3xl"></i>
           </div>
 
           <!-- formula -->
@@ -403,126 +313,176 @@
       </div>
     </div>
 
-    <div class="w-full mx-auto py-12 px-40 mt-20 border-b-2 border-gray-700">
-      <!-- Main Container -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <!-- Left Section: Image Background with Service Code & Text -->
-        <div
-          class="relative h-full bg-cover bg-center rounded-xl"
-          style="
-            background-image: url('https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_1536/https://motorsportgrowth.com/wp-content/uploads/2024/07/Asset-15-1536x482.png');
-          "
-        >
-          <!-- Glassmorphism Overlay -->
-          <div
-            class="absolute inset-0 bg-white/20 backdrop-blur-lg rounded-xl"
-          ></div>
+    <!-- core service -->
+    <div class="relative bg-[#18181d] text-center p-10 w-full">
+      <div class="flex gap-2 items-center justify-center">
+        <h2 class="text-4xl font-semibold text-white">
+          Core Services We Provide
+        </h2>
+      </div>
 
-          <!-- Service Code & Text (centered) -->
-          <div
-            class="absolute inset-0 flex items-center justify-center text-center text-white space-y-4 p-6"
-          >
-            <h2 class="text-4xl font-bold text-red-600">
-              Core Services We Provide
-            </h2>
+      <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 px-40 py-8">
+        <div
+          class="w-full flex flex-col items-start mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+        >
+          <!-- Logo -->
+          <div class="flex items-center justify-center w-12 h-12">
+            <i class="fas fa-user-check text-white text-3xl"></i>
+          </div>
+
+          <!-- formula -->
+          <div class="space-y-3 text-white text-start">
+            <p class="text-lg font-bold">Paid Advertising</p>
+            <p class="text-base">Meta, Google, YouTube Pre-Roll</p>
           </div>
         </div>
 
-        <!-- Right Section: Services List (Grid 2x2) -->
-        <div class="grid grid-cols-2 gap-1">
-          <div
-            class="bg-gray-800 text-white text-center flex flex-col items-center justify-center p-2 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
-          >
-            <h4 class="text-base font-semibold">Paid Advertising</h4>
-            <p class="text-xs">Meta, Google, YouTube Pre-Roll</p>
+        <div
+          class="w-full flex flex-col items-start mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+        >
+          <!-- Logo -->
+          <div class="flex items-center justify-center w-12 h-12">
+            <i class="fas fa-user-check text-white text-3xl"></i>
           </div>
 
-          <div
-            class="bg-gray-800 text-white text-center flex flex-col items-center justify-center py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
-          >
-            <h4 class="text-base font-semibold">Website & Funnel Builds</h4>
-            <p class="text-xs">Conversion-focused, Mobile-First</p>
+          <!-- formula -->
+          <div class="space-y-3 text-white text-start">
+            <p class="text-lg font-bold">Website & Funnel Builds</p>
+            <p class="text-base">Conversion-focused, Mobile-First</p>
+          </div>
+        </div>
+
+        <div
+          class="w-full flex flex-col items-start mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+        >
+          <!-- Logo -->
+          <div class="flex items-center justify-center w-12 h-12">
+            <i class="fas fa-user-check text-white text-3xl"></i>
           </div>
 
-          <div
-            class="bg-gray-800 text-white text-center flex flex-col items-center justify-center py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
-          >
-            <h4 class="text-base font-semibold">Local-SEO & GBP Management</h4>
+          <!-- formula -->
+          <div class="space-y-3 text-white text-start">
+            <p class="text-lg font-bold">Local-SEO & GBP Management</p>
+          </div>
+        </div>
+
+        <div
+          class="w-full flex flex-col items-start mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+        >
+          <!-- Logo -->
+          <div class="flex items-center justify-center w-12 h-12">
+            <i class="fas fa-user-check text-white text-3xl"></i>
           </div>
 
-          <div
-            class="bg-gray-800 text-white text-center flex flex-col items-center justify-center py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
-          >
-            <h4 class="text-base font-semibold">
-              Email & SMS Nurture Automations
-            </h4>
+          <!-- formula -->
+          <div class="space-y-3 text-white text-start">
+            <p class="text-lg font-bold">Email & SMS Nurture Automations</p>
           </div>
-          <div
-            class="bg-gray-800 text-white text-center flex flex-col items-center justify-center py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
-          >
-            <h4 class="text-base font-semibold">
+        </div>
+
+        <div
+          class="w-full flex flex-col items-start mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+        >
+          <!-- Logo -->
+          <div class="flex items-center justify-center w-12 h-12">
+            <i class="fas fa-user-check text-white text-3xl"></i>
+          </div>
+
+          <!-- formula -->
+          <div class="space-y-3 text-white text-start">
+            <p class="text-lg font-bold">
               High-Ticket Offer Creation & Pricing Strategy
-            </h4>
+            </p>
           </div>
-          <div
-            class="bg-gray-800 text-white text-center flex flex-col items-center justify-center py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
-          >
-            <h4 class="text-base font-semibold">
-              Creative Production (reels, UGC-style ads, photo/video shoots)
-            </h4>
+        </div>
+
+        <div
+          class="w-full flex flex-col items-start mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+        >
+          <!-- Logo -->
+          <div class="flex items-center justify-center w-12 h-12">
+            <i class="fas fa-user-check text-white text-3xl"></i>
           </div>
-          <div
-            class="bg-gray-800 text-white text-center flex flex-col items-center justify-center py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
-          >
-            <h4 class="text-base font-semibold">Branding (Logo / etc.)</h4>
+
+          <!-- formula -->
+          <div class="space-y-3 text-white text-start">
+            <p class="text-lg font-bold">Creative Production</p>
+            <p class="text-base">(reels, UGC-style ads, photo/video shoots)</p>
           </div>
-          <div
-            class="bg-gray-800 text-white text-center flex flex-col items-center justify-center py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
-          >
-            <h4 class="text-base font-semibold">
-              Analytics & Reporting Dashboard
-            </h4>
-            <p class="text-xs">real-time CPL, ROAS, booked revenue</p>
+        </div>
+
+        <div
+          class="w-full flex flex-col items-start mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+        >
+          <!-- Logo -->
+          <div class="flex items-center justify-center w-12 h-12">
+            <i class="fas fa-user-check text-white text-3xl"></i>
           </div>
-          <div
-            class="bg-gray-800 text-white text-center flex flex-col items-center justify-center py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
-          >
-            <h4 class="text-base font-semibold">
-              Customer Relationship Management
-            </h4>
-            <p class="text-xs">software</p>
+
+          <!-- formula -->
+          <div class="space-y-3 text-white text-start">
+            <p class="text-lg font-bold">Branding (Logo / etc.)</p>
+          </div>
+        </div>
+
+        <div
+          class="w-full flex flex-col items-start mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+        >
+          <!-- Logo -->
+          <div class="flex items-center justify-center w-12 h-12">
+            <i class="fas fa-user-check text-white text-3xl"></i>
+          </div>
+
+          <!-- formula -->
+          <div class="space-y-3 text-white text-start">
+            <p class="text-lg font-bold">Analytics & Reporting Dashboard</p>
+            <p class="text-base">real-time CPL, ROAS, booked revenue</p>
+          </div>
+        </div>
+
+        <div
+          class="w-full flex flex-col items-start mx-auto backdrop-blur-md bg-gray-800/70 border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+        >
+          <!-- Logo -->
+          <div class="flex items-center justify-center w-12 h-12">
+            <i class="fas fa-user-check text-white text-3xl"></i>
+          </div>
+
+          <!-- formula -->
+          <div class="space-y-3 text-white text-start">
+            <p class="text-lg font-bold">Customer Relationship Management</p>
+            <p class="text-base">software</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="w-full mx-auto py-12 px-40 mt-20 border-b-2 border-gray-700">
+    <!-- about -->
+    <div class="relative w-full mx-auto p-10 lg:px-40">
       <!-- Main Container -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div class="col-span-2 flex gap-2 items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="17"
-            height="18"
-            viewBox="0 0 33 32"
-            fill="none"
+      <div class="grid grid-cols-1 lg:grid-cols-3 items-center">
+        <!-- Left: Circle Image -->
+        <div class="flex justify-center">
+          <div
+            class="w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-lg"
           >
-            <path
-              d="M0.5 16C15.3967 18.9286 16.5 32 16.5 32C16.5 32 17.6033 18.9286 32.5 16C17.6033 13.0714 16.5 0 16.5 0C16.5 0 15.3967 13.0714 0.5 16Z"
-              fill="#F9022C"
-            ></path>
-          </svg>
-          <h2 class="text-4xl font-semibold text-white">
-            About Ahmad (Founder)
-          </h2>
+            <img
+              src="https://img.freepik.com/free-photo/studio-portrait-bearded-male-with-crossed-arms-dressed-blue-jacket-grey-vignette-background_613910-20111.jpg?semt=ais_hybrid&w=740"
+              alt="Founder"
+              class="object-cover w-full h-full"
+            />
+          </div>
         </div>
 
-        <!-- Right Section: Services List (Grid 2x2) -->
-        <div class="grid grid-cols-1 gap-1 h-67">
-          <div
-            class="bg-gray-800 text-white text-center flex flex-col items-center justify-center p-4 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
-          >
-            <!-- <h4 class="text-xl font-semibold">About Ahmad (Founder)</h4> -->
+        <!-- Right: Text Content -->
+        <div class="text-white col-span-2">
+          <div class="text-white flex flex-col justify-center p-6 rounded-lg">
+            <!-- Header -->
+            <div class="col-span-2 flex gap-2 items-center justify-start mb-4">
+              <h2 class="text-4xl font-semibold text-white">
+                About Ahmad (Founder)
+              </h2>
+            </div>
             <p class="text-xl text-start mb-4">
               Ex-car-guy turned growth nerd. Cracked the Euro / Exotic code for
               auto / performance shops.
@@ -531,41 +491,28 @@
               Built Motorsport Growth to help independents out-market dealers
               and fill bays with high-ticket jobs.
             </p>
-            <p class="text-xl text-start mb-2">
+            <p class="text-xl text-start">
               Guarantee mindset: “If we don’t make you money, we don’t keep your
               money.”
             </p>
           </div>
         </div>
-
-        <!-- Left Section: Image Background with Service Code & Text -->
-        <div
-          class="relative h-67 bg-cover bg-center rounded-xl"
-          style="
-            background-image: url('https://img.freepik.com/free-photo/studio-portrait-bearded-male-with-crossed-arms-dressed-blue-jacket-grey-vignette-background_613910-20111.jpg?semt=ais_hybrid&w=740');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-          "
-        >
-          <!-- Glassmorphism Overlay -->
-          <!-- <div class="absolute inset-0 bg-white/20 backdrop-blur-lg rounded-xl"></div> -->
-        </div>
       </div>
     </div>
 
-    <div class="w-full mx-auto px-40 py-12">
+    <!-- faqs -->
+    <div class="relative bg-[#18181d] w-full mx-auto px-40 p-10">
       <!-- FAQ Section Title -->
       <h2 class="text-3xl font-bold text-center text-white mb-8">
         Frequently Asked Questions
       </h2>
 
       <!-- FAQ List (2x2 Grid) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <!-- FAQ 1 -->
         <div class="bg-gray-800 text-white rounded-lg shadow-lg">
           <button
-            class="w-full text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-gray-700 flex justify-between items-center"
+            class="w-full rounded-lg cursor-pointer text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-red-700 flex justify-between items-center"
           >
             Is the blueprint really free?
             <span class="text-xl plus-minus">+</span>
@@ -581,7 +528,7 @@
         <!-- FAQ 2 -->
         <div class="bg-gray-800 text-white rounded-lg shadow-lg">
           <button
-            class="w-full text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-gray-700 flex justify-between items-center"
+            class="w-full rounded-lg cursor-pointer text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-red-700 flex justify-between items-center"
           >
             Do I need a giant ad budget?
             <span class="text-xl plus-minus">+</span>
@@ -596,7 +543,7 @@
         <!-- FAQ 3 -->
         <div class="bg-gray-800 text-white rounded-lg shadow-lg">
           <button
-            class="w-full text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-gray-700 flex justify-between items-center"
+            class="w-full rounded-lg cursor-pointer text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-red-700 flex justify-between items-center"
           >
             Will it work for domestic or JDM cars?
             <span class="text-xl plus-minus">+</span>
@@ -609,7 +556,7 @@
         <!-- FAQ 4 -->
         <div class="bg-gray-800 text-white rounded-lg shadow-lg">
           <button
-            class="w-full text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-gray-700 flex justify-between items-center"
+            class="w-full rounded-lg cursor-pointer text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-red-700 flex justify-between items-center"
           >
             How long before I see cars in the bay?
             <span class="text-xl plus-minus">+</span>
@@ -622,7 +569,7 @@
         <!-- FAQ 5 -->
         <div class="bg-gray-800 text-white rounded-lg shadow-lg">
           <button
-            class="w-full text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-gray-700 flex justify-between items-center"
+            class="w-full rounded-lg cursor-pointer text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-red-700 flex justify-between items-center"
           >
             What if I’m already running ads?
             <span class="text-xl plus-minus">+</span>
@@ -635,10 +582,40 @@
     </div>
 
     <footer
-      class="bg-gray-900 text-white py-12 px-40 backdrop-blur-md bg-white/10 border-b border-white/20"
+      class="bg-gray-900 text-white backdrop-blur-md bg-white/10 border-b border-white/20"
     >
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="p-10 px-40">
+        <!-- Compliance and Disclaimer -->
+        <div class="mt-8 text-center">
+          <h1 class="text-3xl font-bold">
+            Ready To Fill Your Bays With High-Ticket Jobs?
+          </h1>
+          <p class="mt-4 text-xl">
+            Get our free blueprint and start seeing European luxury vehicles in
+            your shop within weeks.
+          </p>
+        </div>
+
+        <!-- Last-Chance CTA Button -->
+        <div class="mt-8 text-center">
+          <a
+            href="#cta"
+            class="px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-300"
+            >Claim My FREE Blueprint Now</a
+          >
+        </div>
+      </div>
+
+      <div class="w-full mx-auto px-40 p-10 bg-[#18181d]">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="space-y-4">
+            <img
+              class="w-34"
+              src="https://motorsportgrowth.com/wp-content/uploads/2024/12/MG-LOGO.svg"
+              alt="Motorsport Growth Logo"
+            />
+            <p class="text-base font-semibold text-gray-300">Helping auto shops fill bays with high-ticket Euro & Exotic jobs.</p>
+          </div>
           <!-- Mini-nav: Privacy • Terms • Contact -->
           <div class="space-y-4">
             <h3 class="text-lg font-semibold">Quick Links</h3>
@@ -658,67 +635,45 @@
             <p class="text-sm">Phone: (123) 456-7890</p>
           </div>
 
-          <!-- Social Icons (LinkedIn, IG) -->
+          <!-- Social Icons -->
           <div class="space-y-4">
-            <h3 class="text-lg font-semibold">Follow Us</h3>
-            <div class="flex space-x-6">
-              <a
-                href="#"
-                target="_blank"
-                class="text-gray-300 hover:text-gray-400"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  class="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    d="M22.225 0H1.775C.794 0 0 .794 0 1.775v20.45C0 23.206.794 24 1.775 24h20.45c.981 0 1.775-.794 1.775-1.775V1.775C24 .794 23.206 0 22.225 0zm-6.464 4.496a1.885 1.885 0 111.885 1.885 1.885 1.885 0 01-1.885-1.885zM17.5 7.23a6.68 6.68 0 00-1.537-.173c-.33 0-.648.047-.962.12-.55.106-.94.342-1.274.679-.333.338-.584.751-.74 1.19-.16.44-.248.89-.248 1.356v3.697h-3.516V9.83c0-.936.168-1.849.47-2.665.302-.817.733-1.514 1.278-2.095.545-.58 1.206-.98 1.923-1.208.718-.228 1.462-.342 2.222-.342 1.34 0 2.62.332 3.748.939 1.123.604 2.085 1.468 2.742 2.509 1.165 1.618 1.748 3.684 1.748 5.72v6.243h-3.515V11.74c0-1.537-.56-2.99-1.582-4.04z"
-                  ></path>
-                </svg>
+            <h3 class="text-lg font-semibold text-white">Follow Us</h3>
+            <div class="flex space-x-6 text-2xl text-gray-300">
+              <a href="#" target="_blank" class="hover:text-gray-400">
+                <i class="fab fa-facebook-f"></i>
               </a>
-              <a
-                href="#"
-                target="_blank"
-                class="text-gray-300 hover:text-gray-400"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  class="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    d="M19.617 3.383C18.507 2.273 16.899 2 14.79 2 11.28 2 8.344 4.88 8.344 8.378c0 .347.032.69.098 1.025.039.168-.16.335-.336.292C5.944 8.651 3.658 7.635 2.047 5.74 1.212 6.764 0 8.198 0 9.813c0 1.045.226 2.065.623 2.977 1.02 2.35 2.894 4.265 5.415 5.167-.096.236-.18.473-.266.715-.075.204-.16.4-.261.594-.322.58-.725 1.139-1.156 1.674 1.537.522 3.285.813 4.943.813 3.788 0 6.726-2.824 6.726-6.226 0-.357-.033-.715-.1-1.062.08-.266.079-.557-.071-.801-.19-.47-.747-.622-1.111-.373-.466.268-.944.547-1.413.826-1.413.843-2.946 1.335-4.537 1.335z"
-                  ></path>
-                </svg>
+              <a href="#" target="_blank" class="hover:text-gray-400">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" target="_blank" class="hover:text-gray-400">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" target="_blank" class="hover:text-gray-400">
+                <i class="fab fa-youtube"></i>
               </a>
             </div>
           </div>
-        </div>
 
-        <!-- Compliance and Disclaimer -->
-        <div class="mt-8 text-center text-sm text-gray-500">
-          <p>Compliance: Not affiliated with BMW AG, VW Group, etc.</p>
-          <p class="mt-2">
-            Results vary. Figures shown are actual but not typical.
-          </p>
-        </div>
-
-        <!-- Last-Chance CTA Button -->
-        <div class="mt-8 text-center">
-          <a
-            href="#cta"
-            class="px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-300"
-            >Last Chance - Get Started Now</a
-          >
+          <div class="border-t-2 border-gray-500 col-span-4 py-4">
+            <div class="text-center text-base text-gray-300">
+              <p>Compliance: Not affiliated with BMW AG, VW Group, etc.</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
 
+    <div
+      class="fixed w-full p-2 flex items-center justify-between px-40 z-50 bottom-0 bg-red-500"
+    >
+      <h1 class="text-white">
+        LAST CHANCE:
+        <span>Get your free blueprint before this offer expires!</span>
+      </h1>
+      <button type="button" class="bg-white p-1 rounded-md cursor-pointer">
+        Get Started Now
+      </button>
+    </div>
     <script src="faq.js"></script>
   </body>
 </html>
