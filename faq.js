@@ -20,7 +20,7 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
   // Get all FAQ buttons
-  const faqButtons = document.querySelectorAll('.bg-gray-800 button');
+  const faqButtons = document.querySelectorAll('.faq button');
   
   faqButtons.forEach(button => {
     button.addEventListener('click', () => {

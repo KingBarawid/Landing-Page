@@ -302,49 +302,24 @@
           <div
             class="swiper-slide"
           >
-            <div class="border w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg">
+            <div class="border w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
               <!-- Logo -->
-            <div class="stagger-item opacity-0 transition-all duration-600  flex justify-center">
-              <img
-                src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_795/https://motorsportgrowth.com/wp-content/uploads/2024/07/Asset-6-1.png"
-                alt="Logo"
-                class="w-24 h-auto rounded-lg"
-              />
-            </div>
-
-              <!-- Stats -->
-            <div class="stagger-item opacity-0 transition-all duration-600 space-y-3 text-white">
-              <div class="flex items-end space-x-2">
-                <h1 class="text-4xl font-bold text-red-500">688</h1>
-                <p class="text-lg">Leads</p>
+              <div
+                class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full hover:bg-red-600"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M3 12a9 9 0 1 0 3.6-7.2L3 7"/>
+                  <path d="M3 3v4h4"/>
+                </svg>
               </div>
-              <p class="text-lg font-semibold">$12 Cost-Per-Lead</p>
-              <p class="text-lg font-semibold">Fully booked calendar</p>
-              <p class="text-lg font-semibold">450% increase in net profit</p>
-            </div>
 
-              <!-- Star Rating (optional quote) -->
-              <div class="stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2">
-                <div class="flex space-x-1">
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-gray-300">★</span>
-                </div>
-
-                <p class="text-gray-300 italic">
-                  "Great service! Helped me reach my business goals." - Sam
+              <!-- Formula -->
+              <div class="stagger-item opacity-0 transition-all duration-600 space-y-3 text-white">
+                <p class="text-lg font-bold">Trash losers, boost winners—weekly.</p>
+                <p class="text-base">
+                  If an ad wastes money, it’s gone. The good ones get more fuel, so
+                  your cost per lead keeps dropping.
                 </p>
-              </div>
-
-              <!-- Button -->
-              <div class="stagger-item opacity-0 transition-all duration-600 text-center">
-                <button
-                  class="w-full px-6 py-3 bg-[#E10600] text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
-                >
-                  Show me how
-                </button>
               </div>
             </div>
           </div>
@@ -361,7 +336,7 @@
     </div>
 
     <!-- Winning Section -->
-    <div class="relative text-center p-20 px-40 w-full border section-bg">
+    <div class="relative text-center p-20 px-40 w-full border">
       <div class="stagger-item opacity-0 transition-all duration-600 flex gap-2 items-center justify-center">
         <h2 class="text-4xl font-semibold text-white">Our Winning Formula</h2>
       </div>
@@ -448,11 +423,11 @@
         </div>
 
         <div
-          class="w-full flex flex-col items-center mx-auto backdrop-blur-md border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+          class="w-full flex flex-col items-center mx-auto backdrop-blur-md border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl"
         >
           <!-- Logo -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
+            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full hover:bg-red-600"
           >
             <!-- <i class="fas fa-user-check text-white text-3xl"></i> -->
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -672,7 +647,7 @@
       <!-- FAQ List (2x2 Grid) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <!-- FAQ 1 -->
-        <div class="stagger-item opacity-0 transition-all duration-600 bg-black/80 text-white rounded-lg shadow-lg">
+        <div class="faq stagger-item opacity-0 transition-all duration-600 bg-black/80 text-white rounded-lg shadow-lg">
           <button
             class="w-full rounded-lg cursor-pointer text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-red-700 flex justify-between items-center"
           >
@@ -688,7 +663,7 @@
         </div>
 
         <!-- FAQ 2 -->
-        <div class="stagger-item opacity-0 transition-all duration-600 bg-black/80 text-white rounded-lg shadow-lg">
+        <div class="faq stagger-item opacity-0 transition-all duration-600 bg-black/80 text-white rounded-lg shadow-lg">
           <button
             class="w-full rounded-lg cursor-pointer text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-red-700 flex justify-between items-center"
           >
@@ -703,7 +678,7 @@
         </div>
 
         <!-- FAQ 3 -->
-        <div class="stagger-item opacity-0 transition-all duration-600 bg-black/80 text-white rounded-lg shadow-lg">
+        <div class="faq stagger-item opacity-0 transition-all duration-600 bg-black/80 text-white rounded-lg shadow-lg">
           <button
             class="w-full rounded-lg cursor-pointer text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-red-700 flex justify-between items-center"
           >
@@ -716,7 +691,7 @@
         </div>
 
         <!-- FAQ 4 -->
-        <div class="stagger-item opacity-0 transition-all duration-600 bg-black/80 text-white rounded-lg shadow-lg">
+        <div class="faq stagger-item opacity-0 transition-all duration-600 bg-black/80 text-white rounded-lg shadow-lg">
           <button
             class="w-full rounded-lg cursor-pointer text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-red-700 flex justify-between items-center"
           >
@@ -729,7 +704,7 @@
         </div>
 
         <!-- FAQ 5 -->
-        <div class="stagger-item opacity-0 transition-all duration-600 bg-black/80 text-white rounded-lg shadow-lg">
+        <div class="faq stagger-item opacity-0 transition-all duration-600 bg-black/80 text-white rounded-lg shadow-lg">
           <button
             class="w-full rounded-lg cursor-pointer text-left px-6 py-4 text-xl font-semibold focus:outline-none hover:bg-red-700 flex justify-between items-center"
           >
