@@ -1,73 +1,111 @@
-/* Red border that follows the entire box */
-.borderTail {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid transparent;
-    border-radius: 1rem; /* rounded corners like the container */
-    background-image: linear-gradient(white, white),
-      linear-gradient(to right, red 50%, transparent 50%) repeat-x,
-      linear-gradient(to bottom, red 50%, transparent 50%) repeat-y;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    animation: borderAnimation 8s infinite;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000;
+  color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.carbon-bg {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiPgo8cmVjdCB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBmaWxsPSIjMDAwMDAwIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMNiA2IiBzdHJva2U9IiMxMDEwMTAiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8cGF0aCBkPSJNNiAwTDAgNiIgc3Ryb2tlPSIjMTAxMDEwIiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KPC9zdmc+');
+}
+
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.swiper-button-next, .swiper-button-prev, .swiper-pagination{
+  color: #E10600 !important;
+}
+.swiper-pagination-bullet-active{
+  background: #E10600 !important;
+}
+/* hero section */
+@keyframes stroke-fill-fade {
+  0%, 100% {
+    color: transparent;
+    -webkit-text-stroke: 1px #E10600;
+    
   }
-  
-  /* Spark that moves with the trail */
-  .spark {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-    box-shadow: 0 0 15px red;
-    animation: sparkAnimation 8s infinite linear;
+  50% {
+    color: #E10600; /* Tailwind red-500 */
+    -webkit-text-stroke: 1px transparent;
   }
-  
-  /* Spark movement animation: follows the border in a loop */
-  @keyframes sparkAnimation {
-    0% {
-      top: 0;
-      left: 0;
-      transform: translate(0, 0);
-    }
-    25% {
-      top: 0;
-      left: 100%;
-      transform: translate(-100%, 0);
-    }
-    50% {
-      top: 100%;
-      left: 100%;
-      transform: translate(-100%, -100%);
-    }
-    75% {
-      top: 100%;
-      left: 0;
-      transform: translate(0, -100%);
-    }
-    100% {
-      top: 0;
-      left: 0;
-      transform: translate(0, 0);
-    }
+}
+
+.text-stroke-animated {
+  font-weight: bold;
+  -webkit-text-stroke: 1px transparent;
+  color: transparent;
+  animation: stroke-fill-fade 6s ease-in-out infinite;
+}
+
+@keyframes pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
   }
-  
-  /* Animation for the border tail growing */
-  @keyframes borderAnimation {
-    0% {
-      background-position: 100% 0%, 100% 0%, 0% 100%;
-    }
-    25% {
-      background-position: 100% 0%, 0% 0%, 0% 100%;
-    }
-    50% {
-      background-position: 100% 100%, 0% 0%, 0% 100%;
-    }
-    75% {
-      background-position: 100% 100%, 100% 0%, 0% 100%;
-    }
-    100% {
-      background-position: 100% 100%, 100% 100%, 100% 100%;
-    }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
   }
+}
+
+.pulse {
+  animation: pulse-scale 1.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+
+@keyframes borderLight {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 400% 0%;
+  }
+}
+
+.border-animation {
+  border-radius: 0.5rem; /* match rounded-lg */
+  border: 2px solid transparent;
+  background: linear-gradient(90deg, 
+    rgba(225,6,0,0.2), 
+    rgba(225,6,0,1), 
+    rgba(225,6,0,0.2)) no-repeat;
+  background-size: 400% 100%;
+  animation: borderLight 2s linear infinite;
+  mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  -webkit-mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  padding: 2px;
+  z-index: 1;
+}
+
+
+
+/* stagger */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(10px); /* Initially off-screen */
+  transition-property: transform, opacity;
+  transition-timing-function: ease-out;
+}
+
+.stagger-item.visible {
+  opacity: 1;
+  transform: translateY(0); /* Move element into position */
+}
+
+
+
+
