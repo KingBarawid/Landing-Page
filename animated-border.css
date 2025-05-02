@@ -12,8 +12,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://c4.wallpaperflare.com/wallpaper/394/195/612/car-vehicle-workshop-concept-car-wallpaper-preview.jpg');
-  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.pinimg.com/736x/7e/6f/c0/7e6fc05dd484cc73cd3e3dbc432ea532.jpg');
+  background-size: contain;
   background-position: center;
   background-attachment: fixed;
 }
@@ -46,9 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-stroke-animated {
   font-weight: bold;
-  -webkit-text-stroke: 1px transparent;
-  color: transparent;
-  animation: stroke-fill-fade 6s ease-in-out infinite;
+  color: #E10600;
 }
 
 @keyframes pulse-scale {
@@ -114,5 +112,204 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* hero section */
+.hero h1{
+  font-size: 4em;
+}
 
+/* larger device */
+@media (min-width: 1440px) {
+  .hero h1{
+    font-size: 3.5em;
+  }
+  
+  .hero .video-con{
+    height: 80dvh;
+  }
 
+  .result-con .card{
+    width: 100%;
+    height: 75dvh;
+    padding: 5dvh 5dvh;
+  }
+  .result-con .card img{
+    width: 50%;
+  }
+  
+}
+
+@media (min-width: 1480px) {
+  
+  /* header */
+  header{
+    padding: 2vh 35vh 2vh 35vh;
+  }
+
+  header img{
+    width: 10%;
+  }
+  header div a{
+    color: white;
+    font-size: 2.5em;
+  }
+
+  /* hero */
+  .hero{
+    padding: 15vh 30vh;
+  }
+  .hero h1{
+    font-size: 5.5em;
+  }
+  .hero h1 span{
+    font-size: 1.5em;
+  }
+  .hero p{
+    font-size: 4em;
+  }
+  .hero .video-con{
+    height: 80dvh;
+  }
+  .hero .video-con div svg{
+    width: 10%;
+  }
+  .hero .cta{
+    color: white;
+    font-size: 2.5em;
+    margin-top: 2vh;
+  }
+
+  /* results */
+  .result-con{
+    padding: 10vh 30vh;
+  }
+  .result-con .title{
+    font-size: 4em;
+  }
+  .result-con .mySwiper{
+    gap: 100px;
+  }
+  .result-con .card{
+    width: 100%;
+    height: 65dvh;
+    padding: 5dvh 5dvh;
+  }
+  .result-con .card img{
+    width: 50%;
+  }
+
+  .result-con .card h1{
+    font-size: 3em;
+  }
+  .result-con .card p{
+    font-size: 2em;
+  }
+
+  .result-con .card .stars span{
+    font-size: 2em;
+  }
+  .result-con .card button{
+    font-size: 2em;
+  }
+  .result-con .swiper-button-next{
+    padding-right: 20vh;
+  }
+  .result-con .swiper-button-prev{
+    padding-left: 20vh;
+  }
+
+  /* Winning con */
+  /* results */
+  .winning-con{
+    padding: 10vh 30vh;
+  }
+  .winning-con .title{
+    font-size: 4em;
+  }
+  .winning-con .svg-con{
+    width: 35%;
+    height: 10dvh;
+  }
+  .winning-con .svg-con svg{
+    width: 60%;
+    height: 100%;
+  }
+
+  .winning-con p:nth-child(1){
+    font-size: 2.5em;
+  }
+  .winning-con p:nth-child(2){
+    font-size: 2em;
+  }
+  .winning-con .card{
+    padding: 2vh;
+  }
+
+  /* core service */
+  .core-service-con{
+    padding: 10vh 20vh;
+  }
+  .core-service-con .title{
+    font-size: 4em;
+  }
+  .core-service-con .logo{
+    width: 10%;
+    height: 10dvh;
+  }
+  .core-service-con .logo i{
+    font-size: 6em;
+  }
+  .core-service-con p{
+    font-size: 2.5em;
+  }
+
+  /* about */
+  .about-con{
+    padding: 10vh 30vh;
+  }
+  .about-con .profile{
+    width: 70%;
+    height: auto;
+    height: 32dvh;
+  }
+  .about-con h2{
+    font-size: 4em;
+  }
+  .about-con p{
+    font-size: 2.5em;
+  }
+
+  /* faqs */
+  .faqs-con{
+    padding: 10vh 30vh;
+  }
+  .faqs-con .title{
+    font-size: 4em;
+  }
+
+  .faqs-con p, .faqs-con button{
+    font-size: 2.5em;
+  }
+  .faqs-con button span{
+    font-size: 1.5em;
+  }
+
+  /* footer */
+  .footer-con{
+    padding: 10vh 30vh;
+  }
+  .footer-con h1{
+    font-size: 4em;
+  }
+  .footer-con h3{
+    font-size: 3em;
+  }
+  .footer-con p{
+    font-size: 2.5em;
+  }
+  .footer-con a{
+    font-size: 2.5em;
+  }
+  .footer-con img{
+    width: 60%;
+  }
+}

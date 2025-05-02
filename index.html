@@ -42,7 +42,7 @@
           >Layout 2</a
         > -->
         <a
-          class="text-sm xl:text-base bg-[#E10600] hover:bg-red-700 text-white font-semibold p-2 rounded-md transition duration-300"
+          class="text-sm xl:text-base bg-[#E10600] hover:bg-red-700 text-white font-semibold p-4 rounded-full transition duration-300"
           href="#"
           >Claim My Free Blueprint</a
         >
@@ -59,7 +59,7 @@
 
     <!-- Page content -->
     <div
-      class="w-full relative min-h-screen grid grid-cols-1 items-stretch justify-center px-6 md:px-10 xl:px-80 z-10 pt-20"
+      class="hero w-full relative min-h-screen grid grid-cols-1 items-stretch justify-center px-6 md:px-10 xl:px-40 z-10 pt-20"
     >
       <div
         class="flex flex-col justify-center gap-4 p-4 h-full"
@@ -80,15 +80,15 @@
         </p>
 
         <!-- Video Placeholder -->
-        <div class="w-full max-w-2xl flex items-center justify-center h-full xl:-mt-10">
+        <div class="w-full flex items-center justify-center h-full xl:-mt-10">
           <div
-            class="w-full aspect-video grid grid-cols-2 gap-2 xl:p-10 items-center justify-center rounded-lg h-fit"
+            class="w-full aspect-video xl:p-10 items-center justify-center rounded-lg h-fit"
           >
             <div
-              class="col-span-2 max-h-[50vh] xl:max-h-96 stagger-item opacity-0 transition-all duration-600"
+              class="video-con col-span-2 w-full h-[50dvh] stagger-item opacity-0 transition-all duration-600"
             >
               <div
-                class="relative w-full h-96 max-h-[50vh] xl:max-w-2xl aspect-video bg-black/70 flex items-center justify-center rounded-lg overflow-hidden group"
+                class="relative w-full h-full aspect-video bg-black/70 flex items-center justify-center rounded-lg overflow-hidden group"
               >
                 <!-- Play Icon -->
                 <svg
@@ -135,7 +135,7 @@
           <!-- CTA Button -->
           <a
             href="#"
-            class="stagger-item opacity-0 transition-all duration-600 w-fit bg-[#E10600] hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300"
+            class="cta stagger-item opacity-0 transition-all duration-600 w-fit bg-[#E10600] hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300"
           >
             Claim My FREE Blueprint
           </a>
@@ -151,11 +151,11 @@
     </div>
 
     <!-- Results Section -->
-    <div class="relative bg-black/80 p-10 xl:p-20 xl:px-40 w-full">
+    <div class="result-con relative bg-black/80 p-10 xl:p-20 xl:px-40 w-full">
       <div
         class="stagger-item opacity-0 transition-all duration-600 flex gap-2 items-center justify-center"
       >
-        <h2 class="text-2xl xl:text-4xl font-semibold text-white">
+        <h2 class="title text-2xl xl:text-4xl font-semibold text-white">
           Real Results
         </h2>
       </div>
@@ -167,7 +167,7 @@
           
           <div class="swiper-slide">
             <div
-              class="border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+              class="card border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
             >
               <!-- Logo -->
               <div
@@ -182,7 +182,7 @@
 
               <!-- Stats -->
               <div
-                class="stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
+                class="stats stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
               >
                 <div class="flex items-end space-x-2">
                   <h1 class="text-xl xl:text-3xl font-bold text-red-500">
@@ -203,7 +203,7 @@
 
               <!-- Star Rating (optional quote) -->
               <div
-                class="stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
+                class="stars stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
               >
                 <div class="flex space-x-1">
                   <span class="text-yellow-400">★</span>
@@ -214,13 +214,13 @@
                 </div>
 
                 <p class="text-gray-300 italic">
-                  "Great service! Helped me reach my business goals." - <span class="font-bold">Sam</span>
+                  "Great service! Helped me reach my business goals." - <bold class="font-bold">Sam</bold>
                 </p>
               </div>
 
               <!-- Button -->
               <div
-                class="stagger-item opacity-0 transition-all duration-600 text-center"
+                class="stagger-item opacity-0 transition-all duration-600 text-center absolute bottom-10 left-0 right-0 px-12"
               >
                 <button
                   class="w-full px-6 py-3 bg-[#E10600] text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
@@ -233,7 +233,7 @@
 
           <div class="swiper-slide">
             <div
-              class="border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+              class="card border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
             >
               <!-- Logo -->
               <div
@@ -248,7 +248,7 @@
 
               <!-- Stats -->
               <div
-                class="stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
+                class="stats stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
               >
                 <div class="flex items-end space-x-2">
                   <h1 class="text-xl xl:text-3xl font-bold text-red-500">
@@ -269,7 +269,7 @@
 
               <!-- Star Rating (optional quote) -->
               <div
-                class="stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
+                class="stars stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
               >
                 <div class="flex space-x-1">
                   <span class="text-yellow-400">★</span>
@@ -280,13 +280,13 @@
                 </div>
 
                 <p class="text-gray-300 italic">
-                  "Great service! Helped me reach my business goals." - <span class="font-bold">Sam</span>
+                  "Great service! Helped me reach my business goals." - <bold class="font-bold">Sam</bold>
                 </p>
               </div>
 
               <!-- Button -->
               <div
-                class="stagger-item opacity-0 transition-all duration-600 text-center"
+                class="stagger-item opacity-0 transition-all duration-600 text-center absolute bottom-10 left-0 right-0 px-12"
               >
                 <button
                   class="w-full px-6 py-3 bg-[#E10600] text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
@@ -299,7 +299,7 @@
 
           <div class="swiper-slide">
             <div
-              class="border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+              class="card border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
             >
               <!-- Logo -->
               <div
@@ -314,7 +314,7 @@
 
               <!-- Stats -->
               <div
-                class="stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
+                class="stats stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
               >
                 <div class="flex items-end space-x-2">
                   <h1 class="text-xl xl:text-3xl font-bold text-red-500">
@@ -333,7 +333,7 @@
 
               <!-- Star Rating (optional quote) -->
               <div
-                class="stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
+                class="stars stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
               >
                 <div class="flex space-x-1">
                   <span class="text-yellow-400">★</span>
@@ -344,13 +344,13 @@
                 </div>
 
                 <p class="text-gray-300 italic">
-                  "Great service! Helped me reach my business goals." - <span class="font-bold">Sam</span>
+                  "Great service! Helped me reach my business goals." - <bold class="font-bold">Sam</bold>
                 </p>
               </div>
 
               <!-- Button -->
               <div
-                class="stagger-item opacity-0 transition-all duration-600 text-center"
+                class="stagger-item opacity-0 transition-all duration-600 text-center absolute bottom-10 left-0 right-0 px-12"
               >
                 <button
                   class="w-full px-6 py-3 bg-[#E10600] text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
@@ -360,229 +360,228 @@
               </div>
             </div>
           </div>
-
-          <div class="swiper-slide">
-            <div
-              class="border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
-            >
-              <!-- Logo -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 flex justify-center"
-              >
-                <img
-                  src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_748/https://motorsportgrowth.com/wp-content/uploads/2024/07/Asset-1-1.png"
-                  alt="Logo"
-                  class="w-24 h-auto"
-                />
-              </div>
-
-              <!-- Stats -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
-              >
-                <div class="flex items-end space-x-2">
-                  <h1 class="text-xl xl:text-3xl font-bold text-red-500">
-                    118% Increase in Revenue
-                  </h1>
-                </div>
-
-                <p class="text-base xl:text-lg font-semibold">
-                  <i class="fas fa-check-circle"></i> 2556 Leads in 6 Months
-                </p>
-                <p class="text-base xl:text-lg font-semibold">
-                  <i class="fas fa-check-circle"></i> $4.26 Cost-Per-Lead
-                </p>
-                <p class="text-base xl:text-lg font-semibold">
-                  <i class="fas fa-check-circle"></i> 130% Increase in Annual Revenue
-                </p>
-              </div>
-
-              <!-- Star Rating (optional quote) -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
-              >
-                <div class="flex space-x-1">
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-gray-300">★</span>
-                </div>
-
-                <p class="text-gray-300 italic">
-                  "Great service! Helped me reach my business goals." - <span class="font-bold">Sam</span>
-                </p>
-              </div>
-
-              <!-- Button -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 text-center"
-              >
-                <button
-                  class="w-full px-6 py-3 bg-[#E10600] text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
-                >
-                  Show me how
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div
-              class="border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
-            >
-              <!-- Logo -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 flex justify-center"
-              >
-                <img
-                  src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_795/https://motorsportgrowth.com/wp-content/uploads/2024/07/Asset-6-1.png"
-                  alt="Logo"
-                  class="w-24 h-auto"
-                />
-              </div>
-
-              <!-- Stats -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
-              >
-                <div class="flex items-end space-x-2">
-                  <h1 class="text-xl xl:text-3xl font-bold text-red-500">
-                    264% Increase in Booked Appointments
-                  </h1>
-                  <!-- <p class="text-base xl:text-lg">Leads</p> -->
-                </div>
-                <p class="text-base xl:text-lg font-semibold">
-                  <i class="fas fa-check-circle"></i> 450 Leads in 90 Days
-                </p>
-                <p class="text-base xl:text-lg font-semibold">
-                  <i class="fas fa-check-circle"></i> $12 Cost-Per-Lead
-                </p>
-                <p class="text-base xl:text-lg font-semibold">
-                  <i class="fas fa-check-circle"></i> Fully booked calendar
-                </p>
-              </div>
-
-              <!-- Star Rating (optional quote) -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
-              >
-                <div class="flex space-x-1">
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-gray-300">★</span>
-                </div>
-
-                <p class="text-gray-300 italic">
-                  "Great service! Helped me reach my business goals." - <span class="font-bold">Sam</span>
-                </p>
-              </div>
-
-              <!-- Button -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 text-center"
-              >
-                <button
-                  class="w-full px-6 py-3 bg-[#E10600] text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
-                >
-                  Show me how
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div
-              class="border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
-            >
-              <!-- Logo -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 flex justify-center"
-              >
-                <img
-                  src="https://motorsportgrowth.com/wp-content/uploads/2024/07/Asset-3-1-650x197.png"
-                  alt="Logo"
-                  class="w-24 h-auto"
-                />
-              </div>
-
-              <!-- Stats -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
-              >
-                <div class="flex items-end space-x-2">
-                  <h1 class="text-xl xl:text-3xl font-bold text-red-500">
-                    128% Increase in Organic Traffic
-                  </h1>
-                  <!-- <p class="text-base xl:text-lg">Leads</p> -->
-                </div>
-                <p class="text-base xl:text-lg font-semibold">
-                  <i class="fas fa-check-circle"></i> 20 Organic leads / month
-                </p>
-                <p class="text-base xl:text-lg font-semibold">
-                  <i class="fas fa-check-circle"></i> 45% Increase in Booked Appointments
-                </p>
-                
-              </div>
-
-              <!-- Star Rating (optional quote) -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
-              >
-                <div class="flex space-x-1">
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-yellow-400">★</span>
-                  <span class="text-gray-300">★</span>
-                </div>
-
-                <p class="text-gray-300 italic">
-                  "Great service! Helped me reach my business goals." - <span class="font-bold">Sam</span>
-                </p>
-              </div>
-
-              <!-- Button -->
-              <div
-                class="stagger-item opacity-0 transition-all duration-600 text-center"
-              >
-                <button
-                  class="w-full px-6 py-3 bg-[#E10600] text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
-                >
-                  Show me how
-                </button>
-              </div>
-            </div>
-          </div>
-
           
+          <div class="swiper-slide">
+            <div
+              class="card border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+            >
+              <!-- Logo -->
+              <div
+                class="stagger-item opacity-0 transition-all duration-600 flex justify-center"
+              >
+                <img
+                  src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_748/https://motorsportgrowth.com/wp-content/uploads/2024/07/Asset-1-1.png"
+                  alt="Logo"
+                  class="w-24 h-auto"
+                />
+              </div>
+
+              <!-- Stats -->
+              <div
+                class="stats stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
+              >
+                <div class="flex items-end space-x-2">
+                  <h1 class="text-xl xl:text-3xl font-bold text-red-500">
+                    118% Increase in Revenue
+                  </h1>
+                </div>
+
+                <p class="text-base xl:text-lg font-semibold">
+                  <i class="fas fa-check-circle"></i> 2556 Leads in 6 Months
+                </p>
+                <p class="text-base xl:text-lg font-semibold">
+                  <i class="fas fa-check-circle"></i> $4.26 Cost-Per-Lead
+                </p>
+                <p class="text-base xl:text-lg font-semibold">
+                  <i class="fas fa-check-circle"></i> 130% Increase in Annual Revenue
+                </p>
+              </div>
+
+              <!-- Star Rating (optional quote) -->
+              <div
+                class="stars stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
+              >
+                <div class="flex space-x-1">
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-gray-300">★</span>
+                </div>
+
+                <p class="text-gray-300 italic">
+                  "Great service! Helped me reach my business goals." - <bold class="font-bold">Sam</bold>
+                </p>
+              </div>
+
+              <!-- Button -->
+              <div
+                class="stagger-item opacity-0 transition-all duration-600 text-center absolute bottom-10 left-0 right-0 px-12"
+              >
+                <button
+                  class="w-full px-6 py-3 bg-[#E10600] text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
+                >
+                  Show me how
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="card border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+            >
+              <!-- Logo -->
+              <div
+                class="stagger-item opacity-0 transition-all duration-600 flex justify-center"
+              >
+                <img
+                  src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_795/https://motorsportgrowth.com/wp-content/uploads/2024/07/Asset-6-1.png"
+                  alt="Logo"
+                  class="w-24 h-auto"
+                />
+              </div>
+
+              <!-- Stats -->
+              <div
+                class="stats stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
+              >
+                <div class="flex items-end space-x-2">
+                  <h1 class="text-xl xl:text-3xl font-bold text-red-500">
+                    264% Increase in Booked Appointments
+                  </h1>
+                  <!-- <p class="text-base xl:text-lg">Leads</p> -->
+                </div>
+                <p class="text-base xl:text-lg font-semibold">
+                  <i class="fas fa-check-circle"></i> 450 Leads in 90 Days
+                </p>
+                <p class="text-base xl:text-lg font-semibold">
+                  <i class="fas fa-check-circle"></i> $12 Cost-Per-Lead
+                </p>
+                <p class="text-base xl:text-lg font-semibold">
+                  <i class="fas fa-check-circle"></i> Fully booked calendar
+                </p>
+              </div>
+
+              <!-- Star Rating (optional quote) -->
+              <div
+                class="stars stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
+              >
+                <div class="flex space-x-1">
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-gray-300">★</span>
+                </div>
+
+                <p class="text-gray-300 italic">
+                  "Great service! Helped me reach my business goals." - <bold class="font-bold">Sam</bold>
+                </p>
+              </div>
+
+              <!-- Button -->
+              <div
+                class="stagger-item opacity-0 transition-all duration-600 text-center absolute bottom-10 left-0 right-0 px-12"
+              >
+                <button
+                  class="w-full px-6 py-3 bg-[#E10600] text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
+                >
+                  Show me how
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="card border xl:w-[50dvh] mx-auto backdrop-blur-md carbon-bg border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+            >
+              <!-- Logo -->
+              <div
+                class="stagger-item opacity-0 transition-all duration-600 flex justify-center"
+              >
+                <img
+                  src="https://motorsportgrowth.com/wp-content/uploads/2024/07/Asset-3-1-650x197.png"
+                  alt="Logo"
+                  class="w-24 h-auto"
+                />
+              </div>
+
+              <!-- Stats -->
+              <div
+                class="stats stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
+              >
+                <div class="flex items-end space-x-2">
+                  <h1 class="text-xl xl:text-3xl font-bold text-red-500">
+                    128% Increase in Organic Traffic
+                  </h1>
+                  <!-- <p class="text-base xl:text-lg">Leads</p> -->
+                </div>
+                <p class="text-base xl:text-lg font-semibold">
+                  <i class="fas fa-check-circle"></i> 20 Organic leads / month
+                </p>
+                <p class="text-base xl:text-lg font-semibold">
+                  <i class="fas fa-check-circle"></i> 45% Increase in Booked Appointments
+                </p>
+                
+              </div>
+
+              <!-- Star Rating (optional quote) -->
+              <div
+                class="stars stagger-item opacity-0 transition-all duration-600 flex flex-col items-start space-x-2"
+              >
+                <div class="flex space-x-1">
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-yellow-400">★</span>
+                  <span class="text-gray-300">★</span>
+                </div>
+
+                <p class="text-gray-300 italic">
+                  "Great service! Helped me reach my business goals." - <bold class="font-bold">Sam</bold>
+                </p>
+              </div>
+
+              <!-- Button -->
+              <div
+                class="stagger-item opacity-0 transition-all duration-600 text-center absolute bottom-10 left-0 right-0 px-12"
+              >
+                <button
+                  class="w-full px-6 py-3 bg-[#E10600] text-white text-lg font-semibold rounded-lg hover:bg-red-600 transition duration-300"
+                >
+                  Show me how
+                </button>
+              </div>
+            </div>
+          </div>
+
         </div>
         <!-- Optional Swiper Controls -->
       </div>
       <div class="swiper-button-next xl:pe-20"></div>
       <div class="swiper-button-prev xl:ps-20"></div>
-      <div class="swiper-pagination text-[#E10600] mb-4 xl:mb-10"></div>
+      <!-- <div class="swiper-pagination text-[#E10600] mb-4 xl:mb-10"></div> -->
     </div>
 
     <!-- Winning Section -->
-    <div class="relative text-center p-10 xl:p-20 xl:px-40 w-full border">
+    <div class="winning-con relative text-center p-10 xl:p-20 xl:px-40 w-full border">
       <div
         class="stagger-item opacity-0 transition-all duration-600 flex gap-2 items-center justify-center"
       >
-        <h2 class="text-2xl xl:text-4xl font-semibold text-white">
+        <h2 class="title text-2xl xl:text-4xl font-semibold text-white">
           Our Winning Formula
         </h2>
       </div>
 
       <div class="w-full grid grid-cols-1 md:grid-cols-4 gap-6 py-8">
         <div
-          class="w-full flex flex-col items-center mx-auto backdrop-blur-md border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+          class="card w-full flex flex-col items-center mx-auto backdrop-blur-xl border border-white/50 rounded-lg p-6 space-y-6 shadow-lg"
         >
           <!-- Logo -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
+            class="svg-con stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
           >
             <!-- <i class="fas fa-user-check text-white text-3xl"></i> -->
             <svg
@@ -602,7 +601,7 @@
 
           <!-- formula -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
+            class="formula stagger-item opacity-0 transition-all duration-600 space-y-3 text-white"
           >
             <p class="text-lg font-bold">Talk only to the right drivers.</p>
             <p class="text-base">
@@ -613,11 +612,11 @@
         </div>
 
         <div
-          class="w-full flex flex-col items-center mx-auto backdrop-blur-md border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+          class="card w-full flex flex-col items-center mx-auto backdrop-blur-md border border-white/50 rounded-lg p-6 space-y-6 shadow-lg"
         >
           <!-- Logo -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
+            class="svg-con stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
           >
             <!-- <i class="fas fa-user-check text-white text-3xl"></i> -->
             <svg
@@ -649,11 +648,11 @@
         </div>
 
         <div
-          class="w-full flex flex-col items-center mx-auto backdrop-blur-md border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg"
+          class="card w-full flex flex-col items-center mx-auto backdrop-blur-md border border-white/50 rounded-lg p-6 space-y-6 shadow-lg"
         >
           <!-- Logo -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
+            class="svg-con stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full"
           >
             <!-- <i class="fas fa-user-check text-white text-3xl"></i> -->
             <svg
@@ -684,11 +683,11 @@
         </div>
 
         <div
-          class="w-full flex flex-col items-center mx-auto backdrop-blur-md border-b border-white/20 rounded-lg p-6 space-y-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl"
+          class="card w-full flex flex-col items-center mx-auto backdrop-blur-md border border-white/50 rounded-lg p-6 space-y-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl"
         >
           <!-- Logo -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full hover:bg-red-600"
+            class="svg-con stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-16 h-16 bg-red-500/70 rounded-full hover:bg-red-600"
           >
             <!-- <i class="fas fa-user-check text-white text-3xl"></i> -->
             <svg
@@ -720,11 +719,11 @@
     </div>
 
     <!-- core service -->
-    <div class="relative bg-black/80 text-center p-10 w-full">
+    <div class="core-service-con relative bg-black/80 text-center p-10 w-full">
       <div
         class="stagger-item opacity-0 transition-all duration-600 flex gap-2 items-center justify-center"
       >
-        <h2 class="text-2xl xl:text-4xl font-semibold text-white">
+        <h2 class="title text-2xl xl:text-4xl font-semibold text-white">
           Course Material Included
         </h2>
       </div>
@@ -736,7 +735,7 @@
         >
           <!-- Logo -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
+            class="logo stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
           >
             <i class="fas fa-bullseye text-[#E10600] text-3xl"></i>
           </div>
@@ -755,7 +754,7 @@
         >
           <!-- Logo -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
+            class="logo stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
           >
             <i class="fas fa-calendar-check text-[#E10600] text-3xl"></i>
           </div>
@@ -774,7 +773,7 @@
         >
           <!-- Logo -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
+            class="logo stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
           >
             <i class="fas fa-sync-alt text-[#E10600] text-3xl"></i>
           </div>
@@ -792,7 +791,7 @@
         >
           <!-- Logo -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
+            class="logo stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
           >
             <i class="fas fa-chart-line text-[#E10600] text-3xl"></i>
           </div>
@@ -810,7 +809,7 @@
         >
           <!-- Logo -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
+            class="logo stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
           >
             <i class="fas fa-tags text-[#E10600] text-3xl"></i>
           </div>
@@ -830,7 +829,7 @@
         >
           <!-- Logo -->
           <div
-            class="stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
+            class="logo stagger-item opacity-0 transition-all duration-600 flex items-center justify-center w-12 h-12"
           >
             <i class="fas fa-puzzle-piece text-[#E10600] text-3xl"></i>
           </div>
@@ -847,7 +846,7 @@
     </div>
 
     <!-- about -->
-    <div class="relative w-full mx-auto p-10 xl:px-40">
+    <div class="about-con relative w-full mx-auto p-10 xl:px-40 border border-white/50">
       <!-- Main Container -->
       <div class="grid grid-cols-1 lg:grid-cols-3 items-center">
         <!-- Left: Circle Image -->
@@ -855,7 +854,7 @@
           class="stagger-item opacity-0 transition-all duration-600 flex justify-center"
         >
           <div
-            class="bg-black/80 w-34 xl:w-60 h-34 xl:h-60 rounded-full overflow-hidden border-4 border-white shadow-lg"
+            class="profile bg-black/80 w-34 xl:w-60 h-34 xl:h-60 rounded-full overflow-hidden border-4 border-white shadow-lg"
           >
             <img
               src="https://motorsportgrowth.com/wp-content/uploads/2024/12/MG-LOGO.svg"
@@ -900,10 +899,10 @@
     </div>
 
     <!-- faqs -->
-    <div class="relative bg-black/70 w-full mx-auto p-10 xl:px-40 p-10">
+    <div class="faqs-con relative bg-black/70 w-full mx-auto p-10 xl:px-40 p-10">
       <!-- FAQ Section Title -->
       <h2
-        class="stagger-item opacity-0 transition-all duration-600 text-2xl xl:text-3xl font-bold text-center text-white mb-8"
+        class="title stagger-item opacity-0 transition-all duration-600 text-2xl xl:text-3xl font-bold text-center text-white mb-8"
       >
         Frequently Asked Questions
       </h2>
@@ -993,9 +992,9 @@
     </div>
 
     <footer
-      class="w-full bg-gray-900 text-white backdrop-blur-md bg-white/10 border-b border-white/20"
+      class="w-full bg-black/70 text-white backdrop-blur-md bg-white/10 border-b border-white/20"
     >
-      <div class="p-10 xl:px-40">
+      <div class="footer-con p-10 xl:px-40 border border-white/50">
         <!-- Compliance and Disclaimer -->
         <div class="mt-8 text-center">
           <h1 class="text-3xl font-bold">
@@ -1011,13 +1010,13 @@
         <div class="mt-8 text-center w-full">
           <a
             href="#cta"
-            class="p-1 xl:px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-300"
+            class="p-1 xl:px-6 py-4 bg-[#E10600] text-white rounded-full hover:bg-red-600 transition duration-300"
             >Claim My FREE Blueprint Now</a
           >
         </div>
       </div>
 
-      <div class="w-full mx-auto p-10 xl:px-40 bg-[#18181d]">
+      <div class="footer-con w-full mx-auto p-10 xl:px-40 bg-[#18181d]">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="space-y-4">
             <img
@@ -1053,16 +1052,16 @@
           <div class="space-y-4">
             <h3 class="text-lg font-semibold text-white">Follow Us</h3>
             <div class="flex space-x-6 text-2xl text-gray-300">
-              <a href="#" target="_blank" class="hover:text-gray-400">
+              <a href="#" target="_blank" class="text-[#E10600] hover:text-gray-400">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="#" target="_blank" class="hover:text-gray-400">
+              <a href="#" target="_blank" class="text-[#E10600] hover:text-gray-400">
                 <i class="fab fa-instagram"></i>
               </a>
-              <a href="#" target="_blank" class="hover:text-gray-400">
+              <a href="#" target="_blank" class="text-[#E10600] hover:text-gray-400">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-              <a href="#" target="_blank" class="hover:text-gray-400">
+              <a href="#" target="_blank" class="text-[#E10600] hover:text-gray-400">
                 <i class="fab fa-youtube"></i>
               </a>
             </div>
