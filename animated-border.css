@@ -21,7 +21,8 @@ p, a, button, span{
 }
 
 .hero-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1518987048-93e29699e79a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://motionbgs.com/media/660/bmw-carros-driving.jpg'); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://c4.wallpaperflare.com/wallpaper/91/304/14/bmw-red-coupe-front-wallpaper-preview.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -421,7 +422,7 @@ p, a, button, span{
   }
   .footer-con a{
     text-decoration: none;
-    font-size: 2.8em;
+    font-size: 2em;
     padding: 20px;
   }
   .footer-con img{
