@@ -21,7 +21,7 @@ p, a, button, span{
 }
 
 .hero-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://c4.wallpaperflare.com/wallpaper/394/195/612/car-vehicle-workshop-concept-car-wallpaper-preview.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1518987048-93e29699e79a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -183,15 +183,60 @@ p, a, button, span{
     height: 80dvh;
   }
 
-  .result-con .card{
+  /* .result-con .card{
     width: 100%;
     height: 75dvh;
     padding: 5dvh 5dvh;
   }
   .result-con .card img{
     width: 50%;
-  }
+  } */
   
+  /* results */
+  .result-con{
+    padding: 10vh 30vh;
+  }
+  /* .result-con .title{
+    font-size: 3em;
+  } */
+  .result-con .mySwiper{
+    gap: 100px;
+  }
+  .result-con .card{
+    width: 100%;
+    height: 80dvh;
+    padding: 5dvh 5dvh;
+  }
+  .result-con .card img{
+    width: 50%;
+  }
+
+  .result-con .card .stats{
+    /* border: 1px solid #E10600; */
+    height: 31dvh;
+  }
+
+  .result-con .card h1{
+    font-size: 1.8em;
+    margin-bottom: 5px;
+  }
+  .result-con .card p{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  .result-con .card .stars span{
+    font-size: 1.5em;
+  }
+  .result-con .card button{
+    font-size: 1.5em;
+  }
+  .result-con .swiper-button-next{
+    padding-right: 20vh;
+  }
+  .result-con .swiper-button-prev{
+    padding-left: 20vh;
+  }
 }
 
 @media (min-width: 1480px) {
@@ -206,7 +251,7 @@ p, a, button, span{
   }
   header div a{
     color: white;
-    font-size: 2.8em;
+    font-size: 2em;
     padding: 20px;
   }
 
@@ -231,7 +276,7 @@ p, a, button, span{
   }
   .hero .cta{
     color: white;
-    font-size: 2.8em;
+    font-size: 2em;
     padding: 20px;
     margin-top: 2vh;
   }
@@ -248,15 +293,22 @@ p, a, button, span{
   }
   .result-con .card{
     width: 100%;
-    height: 70dvh;
+    height: 75dvh;
     padding: 5dvh 5dvh;
   }
   .result-con .card img{
     width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .result-con .card .stats{
+    /* border: 1px solid #E10600; */
+    height: 32dvh;
   }
 
   .result-con .card h1{
     font-size: 3.1em;
+    margin-bottom: 20px;
   }
   .result-con .card p{
     font-size: 2.3em;
@@ -361,10 +413,14 @@ p, a, button, span{
   .footer-con h3{
     font-size: 3em;
   }
+  .target-p{
+    font-size: 2.8em !important;
+  }
   .footer-con p{
     font-size: 2.8em;
   }
   .footer-con a{
+    text-decoration: none;
     font-size: 2.8em;
     padding: 20px;
   }
