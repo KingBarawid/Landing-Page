@@ -3,23 +3,39 @@ body {
   background-color: #000;
   color: white;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+h1, h2, h3, h4, h5, h6, .sub-title {
+  /* font-family: 'Montserrat', sans-serif;
+  font-weight: 700; */
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, a, button, span{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  /* font-style: normal; */
 }
 .carbon-bg {
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiPgo8cmVjdCB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBmaWxsPSIjMDAwMDAwIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMNiA2IiBzdHJva2U9IiMxMDEwMTAiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8cGF0aCBkPSJNNiAwTDAgNiIgc3Ryb2tlPSIjMTAxMDEwIiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KPC9zdmc+');
 }
 
 .hero-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.pinimg.com/736x/7e/6f/c0/7e6fc05dd484cc73cd3e3dbc432ea532.jpg');
-  background-size: contain;
-  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://c4.wallpaperflare.com/wallpaper/394/195/612/car-vehicle-workshop-concept-car-wallpaper-preview.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: fixed;
 }
 
 .section-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./blurred-cut-metal-car-engine-part_1028938-119870.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.shutterstock.com/image-illustration/minimalist-dark-abstract-interior-design-600nw-2479378187.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://w0.peakpx.com/wallpaper/382/464/HD-wallpaper-street-riders-sportscar-garage-video-game-design-racing-car-gaming-xbox-dark-ferrari-car-digital-mercedes-yellow-car-night-style.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -117,6 +133,46 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4em;
 }
 
+/* mobile */
+@media (min-width:320px) {
+  header div a{
+    font-size: 0.8em;
+    padding: 7px;
+  }
+
+  .hero h1{
+    font-size: 1.5em;
+  }
+  .hero .cta{
+    color: white;
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+   /* results */
+   .result-con .card .card-btn{
+    position:unset;
+    width: 100%;
+    padding: 0;
+
+   }
+   .result-con .card button{
+    font-size: 0.8em;
+  }
+
+  /* our winning formula */
+  .winning-con .svg-con{
+    width: 35%;
+    height: 9dvh;
+  }
+
+  .winning-con .svg-con svg{
+    width: 50%;
+    height: 100%;
+  }
+  
+}
+
 /* larger device */
 @media (min-width: 1440px) {
   .hero h1{
@@ -150,7 +206,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   header div a{
     color: white;
-    font-size: 2.5em;
+    font-size: 2.8em;
+    padding: 20px;
   }
 
   /* hero */
@@ -160,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero h1{
     font-size: 5.5em;
   }
-  .hero h1 span{
+  .hero h1 .sub-title{
     font-size: 1.5em;
   }
   .hero p{
@@ -174,7 +231,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   .hero .cta{
     color: white;
-    font-size: 2.5em;
+    font-size: 2.8em;
+    padding: 20px;
     margin-top: 2vh;
   }
 
@@ -183,14 +241,14 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10vh 30vh;
   }
   .result-con .title{
-    font-size: 4em;
+    font-size: 5em;
   }
   .result-con .mySwiper{
     gap: 100px;
   }
   .result-con .card{
     width: 100%;
-    height: 65dvh;
+    height: 70dvh;
     padding: 5dvh 5dvh;
   }
   .result-con .card img{
@@ -198,17 +256,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .result-con .card h1{
-    font-size: 3em;
+    font-size: 3.1em;
   }
   .result-con .card p{
-    font-size: 2em;
+    font-size: 2.3em;
   }
 
   .result-con .card .stars span{
-    font-size: 2em;
+    font-size: 2.3em;
   }
   .result-con .card button{
-    font-size: 2em;
+    font-size: 2.3em;
   }
   .result-con .swiper-button-next{
     padding-right: 20vh;
@@ -223,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10vh 30vh;
   }
   .winning-con .title{
-    font-size: 4em;
+    font-size: 5em;
   }
   .winning-con .svg-con{
     width: 35%;
@@ -238,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.5em;
   }
   .winning-con p:nth-child(2){
-    font-size: 2em;
+    font-size: 2.1em;
   }
   .winning-con .card{
     padding: 2vh;
@@ -249,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10vh 20vh;
   }
   .core-service-con .title{
-    font-size: 4em;
+    font-size: 5em;
   }
   .core-service-con .logo{
     width: 10%;
@@ -272,10 +330,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 32dvh;
   }
   .about-con h2{
-    font-size: 4em;
+    font-size: 5em;
   }
   .about-con p{
-    font-size: 2.5em;
+    font-size: 2.8em;
   }
 
   /* faqs */
@@ -283,14 +341,14 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10vh 30vh;
   }
   .faqs-con .title{
-    font-size: 4em;
+    font-size: 5em;
   }
 
   .faqs-con p, .faqs-con button{
-    font-size: 2.5em;
+    font-size: 2.8em;
   }
   .faqs-con button span{
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
   /* footer */
@@ -298,16 +356,17 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10vh 30vh;
   }
   .footer-con h1{
-    font-size: 4em;
+    font-size: 5em;
   }
   .footer-con h3{
     font-size: 3em;
   }
   .footer-con p{
-    font-size: 2.5em;
+    font-size: 2.8em;
   }
   .footer-con a{
-    font-size: 2.5em;
+    font-size: 2.8em;
+    padding: 20px;
   }
   .footer-con img{
     width: 60%;
